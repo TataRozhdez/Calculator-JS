@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #ffffe6;
+  --color-text: #1a1a00;
+  --color-container: grey;
+}
+html {
+  font-family: sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+body {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  padding: 4px;
+  background-color: var(--color-container);
+  border-radius: 5px;
+  width: 280px;
+}
+.form {
+  max-width: 100%;
+  grid-column: 1/-1;
+  padding: 0;
+}
+.input {
+  width: 100%;
+  height: 60px;
+  outline: none;
+  text-align: right;
+  border-radius: 5px;
+  border: 2px solid grey;
+  font-size: 22px;
+  padding-right: 8px;
+  background-color: var(--main-color);
+  color: var(--color-text);
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.item {
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  align-items: center;
+  font-weight: bold;
+  color: var(--color-text);
+  border: 2px solid var(--color-container);
+  background-color: var(--main-color);
+  border: 2px solid grey;
+  outline: none;
+}
+.clean,
+.back,
+.egual,
+.zero {
+  width: 136px;
+  border-radius: 5px;
+}
+.clean,
+.egual {
+  background-color: #00aaff;
+}
+.other {
+  width: 68px;
+}
+.item:hover {
+  border: 2px solid #330080;
+}
+.item:active {
+  border: 2px solid #cc00ff;
+}
